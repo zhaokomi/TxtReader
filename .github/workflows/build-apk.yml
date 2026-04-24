@@ -36,15 +36,21 @@ jobs:
         run: chmod +x gradlew
 
       - name: 构建 Debug APK
-        run: ./gradlew assembleDebug --info 2>&1 | tee build-output.log
+        run: |
+          ./gradlew assembleDebug --stacktrace 2>&1 | tee build-output.log
 
-      - name: 上传构建日志（总是上传，方便排查失败原因）
+      - name: 上传构建日志（排查用）
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: build-log
           path: build-output.log
           retention-days: 1
+
+      - name: 显示 APK 信息
+        run: |
+          echo "=== APK 构建成功 ==="
+          ls -lh app/build/outputs/apk/debug/app-debug.apk
 
       - name: 上传 APK 产物
         uses: actions/upload-artifact@v4
