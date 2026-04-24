@@ -111,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="space_evenly">
+        android:gravity="center">
 
         <Button
             android:id="@+id/btnTheme0"
