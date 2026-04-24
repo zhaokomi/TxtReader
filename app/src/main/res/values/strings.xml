@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TXT阅读器</string>
+    <string name="bookshelf">书架</string>
+    <string name="import_book">导入书籍</string>
+    <string name="settings">设置</string>
+    <string name="reading_progress">阅读进度</string>
+    <string name="chapter_list">目录</string>
+    <string name="prev_chapter">上一章</string>
+    <string name="next_chapter">下一章</string>
+</resources>
