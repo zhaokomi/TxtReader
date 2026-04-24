@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/primary" />
-    <foreground>
-        <inset android:drawable="@android:drawable/sym_def_app_icon"
-            android:insetLeft="18%"
-            android:insetTop="18%"
-            android:insetRight="18%"
-            android:insetBottom="18%" />
-    </foreground>
-</adaptive-icon>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,32h40c2.2,0 4,1.8 4,4v36c0,2.2 -1.8,4 -4,4H34c-2.2,0 -4,-1.8 -4,-4V36c0,-2.2 1.8,-4 4,-4zM38,42h32v4H38v-4zM38,50h32v4H38v-4zM38,58h20v4H38v-4z"/>
+</vector>
