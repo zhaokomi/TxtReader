@@ -35,7 +35,7 @@ class BookAdapter(
                 }
 
                 // 进度条
-                progressRead.progress = (book.readProgress * 100).toFloat().toInt()
+                progressRead.progress = (book.readProgress * 100).toFloat()
                 tvProgress.text = if (book.readProgress > 0) {
                     "${"%.0f".format(book.readProgress * 100)}%"
                 } else ""
